@@ -21,6 +21,9 @@ python manage.py createsuperuser
 python manage.py runserver
 will be available on http://localhost:8000
 
+Superuser django:
+username: benha
+paasword: benha
 
 Deployment
 On heroku: https://floating-wildwood-31941.herokuapp.com/
@@ -29,25 +32,21 @@ Database
 Is written on SQLite3. 
 
 Postman
-Write message
-POST https://floating-wildwood-31941.herokuapp.com/messages/
 
+Create user:
+POST   /users
 
-Get all messages
-GET https://floating-wildwood-31941.herokuapp.com/message
+Write message:
+POST /messages/
 
-Get unread messages
-GET https://floating-wildwood-31941.herokuapp.com/message/unread
+Get all messages for a specific user:
+GET  /all-messages/user-id
 
+Get unread messages for a specific user :
+GET   /unread-messages/user-id
 
-Get specific message
-GET https://floating-wildwood-31941.herokuapp.com/message/<message_id>
-
-
-Read message
-PUT https://floating-wildwood-31941.herokuapp.com/message/<message_id>
-
+Read message ( mark read in the database)
+GET  /read-messages/<message_id>
 
 Delete message
-DELETE https://floating-wildwood-31941.herokuapp.com/message/<message_id>
-
+DELETE  /messages/message_id/
