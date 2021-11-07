@@ -38,7 +38,7 @@ paasword: benha
 
 
 Deployment
-On heroku: https://floating-wildwood-31941.herokuapp.com/
+On heroku: floating-wildwood-31941
 
 
 Database
@@ -50,18 +50,24 @@ Postman
 
 Create user:
 POST   /users/
+https://floating-wildwood-31941.herokuapp.com/users/
 
 Write message:
 POST /messages/
+https://floating-wildwood-31941.herokuapp.com/messages/
 
 Get all messages for a specific user:
-GET  /all-messages/user-id/
+GET /all-messages/user-id/
+https://floating-wildwood-31941.herokuapp.com/all-messages/1/
 
 Get unread messages for a specific user :
 GET   /unread-messages/user-id/
+https://floating-wildwood-31941.herokuapp.com/unread-messages/1/
 
 Read message ( mark read in the database)
 GET  /read-messages/message_id/
+https://floating-wildwood-31941.herokuapp.com/read-messages/1/
 
 Delete message
 DELETE  /messages/message_id/
+https://floating-wildwood-31941.herokuapp.com/messages/1/
