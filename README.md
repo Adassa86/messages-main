@@ -14,11 +14,17 @@ The rest API contains
 
 Installation locally:
 git clone https://github.com/Adassa86/messages-main.git
-pipenv install -r requirements.txt
+
+pip install -r requirements.txt
+
 python manage.py makemigrations
+
 python manage.py migrate
+
 python manage.py createsuperuser
+
 python manage.py runserver
+
 will be available on http://localhost:8000
 
 Superuser django:
