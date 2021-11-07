@@ -27,10 +27,12 @@ python manage.py createsuperuser
 
 python manage.py runserver
 
-will be available on http://localhost:8000
+and will be available on http://localhost:8000
+
 
 
 Superuser django:
+http://localhost:8000/admin/
 username: benha
 paasword: benha
 
