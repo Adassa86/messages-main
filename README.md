@@ -34,19 +34,19 @@ Is written on SQLite3.
 Postman
 
 Create user:
-POST   /users
+POST   /users/
 
 Write message:
 POST /messages/
 
 Get all messages for a specific user:
-GET  /all-messages/user-id
+GET  /all-messages/user-id/
 
 Get unread messages for a specific user :
-GET   /unread-messages/user-id
+GET   /unread-messages/user-id/
 
 Read message ( mark read in the database)
-GET  /read-messages/<message_id>
+GET  /read-messages/message_id/
 
 Delete message
 DELETE  /messages/message_id/
