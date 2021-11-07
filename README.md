@@ -1,4 +1,5 @@
 Rest API backend system that is responsible for handling messages between users.
+
 A message contains :
 1. sender (owner)
 2. Receiver
@@ -11,6 +12,7 @@ The rest API contains
 - Get all unread messages for a specific user
 - Read message (return one message)
 - Delete message (as owner or as receiver
+
 
 Installation locally:
 git clone https://github.com/Adassa86/messages-main.git
@@ -27,15 +29,20 @@ python manage.py runserver
 
 will be available on http://localhost:8000
 
+
 Superuser django:
 username: benha
 paasword: benha
 
+
 Deployment
 On heroku: https://floating-wildwood-31941.herokuapp.com/
 
+
 Database
 Is written on SQLite3. 
+
+
 
 Postman
 
