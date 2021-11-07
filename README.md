@@ -31,7 +31,7 @@ and will be available on http://localhost:8000
 
 
 Superuser django:
-http://localhost:8000/admin/
+http://localhost:8000/admin
 username: benha
 paasword: benha
 
