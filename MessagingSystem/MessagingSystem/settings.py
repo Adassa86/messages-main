@@ -13,14 +13,9 @@ import os
 from pathlib import Path
 import django_heroku
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '545454kikemldls-dlsdsfn;ssfs6522sdsf' 
 SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False if os.environ.get("ENV","development") == "production" else True
@@ -28,7 +23,6 @@ DEBUG = False if os.environ.get("ENV","development") == "production" else True
 ALLOWED_HOSTS = [".herokuapps.com","localhost","127.0.0.1"]
 
 
-# Application definition
 
 INSTALLED_APPS = [
     'Messages.apps.MessagesConfig',
@@ -72,8 +66,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'MessagingSystem.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -82,9 +74,6 @@ DATABASES = {
     }
 }
 
-
-# Password validation
-# https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -102,9 +91,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/3.1/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -116,8 +102,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
 
